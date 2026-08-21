@@ -1,72 +1,4592 @@
 [
-  {"id": 1, "word": "PIZZA", "category": "Cibo", "difficulty": "facile"},
-  {"id": 2, "word": "COLOSSEO", "category": "Monumenti", "difficulty": "facile"},
-  {"id": 3, "word": "CHITARRA", "category": "Musica", "difficulty": "facile"},
-  {"id": 4, "word": "GIRAFFA", "category": "Animali", "difficulty": "facile"},
-  {"id": 5, "word": "ASTRONAUTA", "category": "Mestieri", "difficulty": "medio"},
-  {"id": 6, "word": "BICICLETTA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 7, "word": "DENTISTA", "category": "Mestieri", "difficulty": "facile"},
-  {"id": 8, "word": "VULCANO", "category": "Natura", "difficulty": "facile"},
-  {"id": 9, "word": "PIRAMIDE", "category": "Monumenti", "difficulty": "medio"},
-  {"id": 10, "word": "GHIACCIAIO", "category": "Natura", "difficulty": "medio"},
-  {"id": 11, "word": "TELECOMANDO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 12, "word": "FRIGORIFERO", "category": "Elettrodomestici", "difficulty": "facile"},
-  {"id": 13, "word": "TRAMONTO", "category": "Natura", "difficulty": "facile"},
-  {"id": 14, "word": "CANGURO", "category": "Animali", "difficulty": "facile"},
-  {"id": 15, "word": "MICROFONO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 16, "word": "SUBACQUEO", "category": "Mestieri", "difficulty": "medio"},
-  {"id": 17, "word": "SEMAFORO", "category": "Città", "difficulty": "facile"},
-  {"id": 18, "word": "ARCOBALENO", "category": "Natura", "difficulty": "facile"},
-  {"id": 19, "word": "OROLOGIO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 20, "word": "POMPIERE", "category": "Mestieri", "difficulty": "facile"},
-  {"id": 21, "word": "CAFFETTIERA", "category": "Cucina", "difficulty": "facile"},
-  {"id": 22, "word": "PARACADUTE", "category": "Sport", "difficulty": "medio"},
-  {"id": 23, "word": "DELFINO", "category": "Animali", "difficulty": "facile"},
-  {"id": 24, "word": "CANESTRO", "category": "Sport", "difficulty": "facile"},
-  {"id": 25, "word": "AQUILONE", "category": "Giochi", "difficulty": "facile"},
-  {"id": 26, "word": "FOTOGRAFO", "category": "Mestieri", "difficulty": "facile"},
-  {"id": 27, "word": "DINOSAURO", "category": "Storia", "difficulty": "facile"},
-  {"id": 28, "word": "CAMPANILE", "category": "Architettura", "difficulty": "medio"},
-  {"id": 29, "word": "LAVAGNA", "category": "Scuola", "difficulty": "facile"},
-  {"id": 30, "word": "PIANOFORTE", "category": "Musica", "difficulty": "facile"},
-  {"id": 31, "word": "TERMOMETRO", "category": "Strumenti", "difficulty": "medio"},
-  {"id": 32, "word": "PUPAZZO DI NEVE", "category": "Inverno", "difficulty": "medio"},
-  {"id": 33, "word": "MOSCHETTIERE", "category": "Storia", "difficulty": "difficile"},
-  {"id": 34, "word": "VENTILATORE", "category": "Elettrodomestici", "difficulty": "facile"},
-  {"id": 35, "word": "ESCHIMESE", "category": "Popoli", "difficulty": "medio"},
-  {"id": 36, "word": "TELESCOPIO", "category": "Scienza", "difficulty": "medio"},
-  {"id": 37, "word": "SCAFFALE", "category": "Arredamento", "difficulty": "facile"},
-  {"id": 38, "word": "CAMALEONTE", "category": "Animali", "difficulty": "medio"},
-  {"id": 39, "word": "PICCIONE", "category": "Animali", "difficulty": "facile"},
-  {"id": 40, "word": "PENTOLA", "category": "Cucina", "difficulty": "facile"},
-  {"id": 41, "word": "ARCIERE", "category": "Mestieri", "difficulty": "medio"},
-  {"id": 42, "word": "FARO", "category": "Mare", "difficulty": "facile"},
-  {"id": 43, "word": "GONDOLA", "category": "Trasporti", "difficulty": "facile"},
-  {"id": 44, "word": "MONTAGNE RUSSE", "category": "Svago", "difficulty": "medio"},
-  {"id": 45, "word": "BAROMETRO", "category": "Strumenti", "difficulty": "difficile"},
-  {"id": 46, "word": "SPAZZOLINO", "category": "Igiene", "difficulty": "facile"},
-  {"id": 47, "word": "METROPOLITANA", "category": "Trasporti", "difficulty": "medio"},
-  {"id": 48, "word": "CIOCCOLATA", "category": "Cibo", "difficulty": "facile"},
-  {"id": 49, "word": "BIBLIOTECA", "category": "Luoghi", "difficulty": "facile"},
-  {"id": 50, "word": "AEROPORTO", "category": "Luoghi", "difficulty": "facile"},
-  {"id": 51, "word": "TARTARUGA", "category": "Animali", "difficulty": "facile"},
-  {"id": 52, "word": "LABIRINTO", "category": "Giochi", "difficulty": "medio"},
-  {"id": 53, "word": "SCATOLA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 54, "word": "ZAINO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 55, "word": "FORBICI", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 56, "word": "SPECCHIO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 57, "word": "CUSCINO", "category": "Arredamento", "difficulty": "facile"},
-  {"id": 58, "word": "CASCO", "category": "Sicurezza", "difficulty": "facile"},
-  {"id": 59, "word": "LANTERNA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 60, "word": "SCULTORE", "category": "Mestieri", "difficulty": "medio"},
-  {"id": 61, "word": "BUSSOLA", "category": "Strumenti", "difficulty": "facile"},
-  {"id": 62, "word": "MATITA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 63, "word": "PAGLIACCIO", "category": "Spettacolo", "difficulty": "facile"},
-  {"id": 64, "word": "MAGO", "category": "Spettacolo", "difficulty": "facile"},
-  {"id": 65, "word": "CAVALLO", "category": "Animali", "difficulty": "facile"},
-  {"id": 66, "word": "CORONA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 67, "word": "BANDIERA", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 68, "word": "VALIGIA", "category": "Viaggi", "difficulty": "facile"},
-  {"id": 69, "word": "PORTAFOGLIO", "category": "Oggetti", "difficulty": "facile"},
-  {"id": 70, "word": "CANDELA", "category": "Oggetti", "difficulty": "facile"}
+  {
+    "id": 1,
+    "word": "PIZZA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 2,
+    "word": "COLOSSEO",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 3,
+    "word": "CHITARRA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 4,
+    "word": "GIRAFFA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 5,
+    "word": "ASTRONAUTA",
+    "category": "Mestieri",
+    "difficulty": "medio"
+  },
+  {
+    "id": 6,
+    "word": "BICICLETTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 7,
+    "word": "DENTISTA",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 8,
+    "word": "VULCANO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 9,
+    "word": "PIRAMIDE",
+    "category": "Monumenti",
+    "difficulty": "medio"
+  },
+  {
+    "id": 10,
+    "word": "GHIACCIAIO",
+    "category": "Natura",
+    "difficulty": "medio"
+  },
+  {
+    "id": 11,
+    "word": "TELECOMANDO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 12,
+    "word": "FRIGORIFERO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 13,
+    "word": "TRAMONTO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 14,
+    "word": "CANGURO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 15,
+    "word": "MICROFONO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 16,
+    "word": "SUBACQUEO",
+    "category": "Mestieri",
+    "difficulty": "medio"
+  },
+  {
+    "id": 17,
+    "word": "SEMAFORO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 18,
+    "word": "ARCOBALENO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 19,
+    "word": "OROLOGIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 20,
+    "word": "POMPIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 21,
+    "word": "CAFFETTIERA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 22,
+    "word": "PARACADUTE",
+    "category": "Sport",
+    "difficulty": "medio"
+  },
+  {
+    "id": 23,
+    "word": "DELFINO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 24,
+    "word": "CANESTRO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 25,
+    "word": "AQUILONE",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 26,
+    "word": "FOTOGRAFO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 27,
+    "word": "DINOSAURO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 28,
+    "word": "CAMPANILE",
+    "category": "Architettura",
+    "difficulty": "medio"
+  },
+  {
+    "id": 29,
+    "word": "LAVAGNA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 30,
+    "word": "PIANOFORTE",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 31,
+    "word": "TERMOMETRO",
+    "category": "Strumenti",
+    "difficulty": "medio"
+  },
+  {
+    "id": 32,
+    "word": "PUPAZZO DI NEVE",
+    "category": "Inverno",
+    "difficulty": "medio"
+  },
+  {
+    "id": 33,
+    "word": "MOSCHETTIERE",
+    "category": "Storia",
+    "difficulty": "difficile"
+  },
+  {
+    "id": 34,
+    "word": "VENTILATORE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 35,
+    "word": "ESCHIMESE",
+    "category": "Popoli",
+    "difficulty": "medio"
+  },
+  {
+    "id": 36,
+    "word": "TELESCOPIO",
+    "category": "Scienza",
+    "difficulty": "medio"
+  },
+  {
+    "id": 37,
+    "word": "SCAFFALE",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 38,
+    "word": "CAMALEONTE",
+    "category": "Animali",
+    "difficulty": "medio"
+  },
+  {
+    "id": 39,
+    "word": "PICCIONE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 40,
+    "word": "PENTOLA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 41,
+    "word": "ARCIERE",
+    "category": "Mestieri",
+    "difficulty": "medio"
+  },
+  {
+    "id": 42,
+    "word": "FARO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 43,
+    "word": "GONDOLA",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 44,
+    "word": "MONTAGNE RUSSE",
+    "category": "Svago",
+    "difficulty": "medio"
+  },
+  {
+    "id": 45,
+    "word": "BAROMETRO",
+    "category": "Strumenti",
+    "difficulty": "difficile"
+  },
+  {
+    "id": 46,
+    "word": "SPAZZOLINO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 47,
+    "word": "METROPOLITANA",
+    "category": "Trasporti",
+    "difficulty": "medio"
+  },
+  {
+    "id": 48,
+    "word": "CIOCCOLATA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 49,
+    "word": "BIBLIOTECA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 50,
+    "word": "AEROPORTO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 51,
+    "word": "TARTARUGA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 52,
+    "word": "LABIRINTO",
+    "category": "Giochi",
+    "difficulty": "medio"
+  },
+  {
+    "id": 53,
+    "word": "SCATOLA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 54,
+    "word": "ZAINO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 55,
+    "word": "FORBICI",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 56,
+    "word": "SPECCHIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 57,
+    "word": "CUSCINO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 58,
+    "word": "CASCO",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 59,
+    "word": "LANTERNA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 60,
+    "word": "SCULTORE",
+    "category": "Mestieri",
+    "difficulty": "medio"
+  },
+  {
+    "id": 61,
+    "word": "BUSSOLA",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 62,
+    "word": "MATITA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 63,
+    "word": "PAGLIACCIO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 64,
+    "word": "MAGO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 65,
+    "word": "CAVALLO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 66,
+    "word": "CORONA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 67,
+    "word": "BANDIERA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 68,
+    "word": "VALIGIA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 69,
+    "word": "PORTAFOGLIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 70,
+    "word": "CANDELA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 71,
+    "word": "GATTO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 72,
+    "word": "CANE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 73,
+    "word": "LEONE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 74,
+    "word": "TIGRE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 75,
+    "word": "ORSO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 76,
+    "word": "LUPO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 77,
+    "word": "VOLPE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 78,
+    "word": "SERPENTE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 79,
+    "word": "RANA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 80,
+    "word": "AQUILA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 81,
+    "word": "SQUALO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 82,
+    "word": "BALENA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 83,
+    "word": "PINGUINO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 84,
+    "word": "ELEFANTE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 85,
+    "word": "SCIMMIA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 86,
+    "word": "CERVO",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 87,
+    "word": "ZEBRA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 88,
+    "word": "MULA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 89,
+    "word": "MAIALE",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 90,
+    "word": "MUCCA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 91,
+    "word": "PECORA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 92,
+    "word": "CAPRA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 93,
+    "word": "GALLINA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 94,
+    "word": "OSTRICA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 95,
+    "word": "MEDUSA",
+    "category": "Animali",
+    "difficulty": "facile"
+  },
+  {
+    "id": 96,
+    "word": "PASTA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 97,
+    "word": "PANE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 98,
+    "word": "RISO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 99,
+    "word": "MELA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 100,
+    "word": "PERA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 101,
+    "word": "BANANA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 102,
+    "word": "ARANCIA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 103,
+    "word": "LIMONE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 104,
+    "word": "UVA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 105,
+    "word": "PESCA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 106,
+    "word": "FRAGOLA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 107,
+    "word": "CILIEGIA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 108,
+    "word": "MELONE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 109,
+    "word": "CAROTA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 110,
+    "word": "PATATA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 111,
+    "word": "INSALATA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 112,
+    "word": "FORMAGGIO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 113,
+    "word": "UOVO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 114,
+    "word": "LATTE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 115,
+    "word": "BURRO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 116,
+    "word": "MIELE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 117,
+    "word": "ZUCCHERO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 118,
+    "word": "SALE",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 119,
+    "word": "OLIO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 120,
+    "word": "ACQUA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 121,
+    "word": "SUCCO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 122,
+    "word": "TORTA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 123,
+    "word": "BISCOTTO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 124,
+    "word": "GELATO",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 125,
+    "word": "CARAMELLA",
+    "category": "Cibo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 126,
+    "word": "MEDICO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 127,
+    "word": "MAESTRO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 128,
+    "word": "PIZZAIOLO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 129,
+    "word": "CUOCO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 130,
+    "word": "PITTORE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 131,
+    "word": "MURATORE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 132,
+    "word": "IDRAULICO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 133,
+    "word": "MECCANICO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 134,
+    "word": "SARTORIA",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 135,
+    "word": "PILOTA",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 136,
+    "word": "AUTISTA",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 137,
+    "word": "GIARDINIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 138,
+    "word": "CONTADINO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 139,
+    "word": "POLIZIOTTO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 140,
+    "word": "CARABINIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 141,
+    "word": "VETERINARIO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 142,
+    "word": "BARBIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 143,
+    "word": "PARRUCCHIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 144,
+    "word": "CAMERIERE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 145,
+    "word": "COMMESSO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 146,
+    "word": "ATTORE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 147,
+    "word": "CANTANTE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 148,
+    "word": "BALLERINO",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 149,
+    "word": "SCRITTORE",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 150,
+    "word": "GIORNALISTA",
+    "category": "Mestieri",
+    "difficulty": "facile"
+  },
+  {
+    "id": 151,
+    "word": "TAVOLO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 152,
+    "word": "SEDIA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 153,
+    "word": "DIVANO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 154,
+    "word": "POLTRONA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 155,
+    "word": "LETTO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 156,
+    "word": "ARMADIO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 157,
+    "word": "SCRIVANIA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 158,
+    "word": "TAPPETO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 159,
+    "word": "TENTAGGIO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 160,
+    "word": "QUADRO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 161,
+    "word": "SCAFFALATURA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 162,
+    "word": "LAMPADARIO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 163,
+    "word": "COMODINO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 164,
+    "word": "PANCA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 165,
+    "word": "SGABELLO",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 166,
+    "word": "AMACA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 167,
+    "word": "VETRINA",
+    "category": "Arredamento",
+    "difficulty": "facile"
+  },
+  {
+    "id": 168,
+    "word": "MUSEO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 169,
+    "word": "CINEMA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 170,
+    "word": "TEATRO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 171,
+    "word": "PARCO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 172,
+    "word": "STADIO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 173,
+    "word": "OSPEDALE",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 174,
+    "word": "FARMACIA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 175,
+    "word": "SUPERMERCATO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 176,
+    "word": "POSTA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 177,
+    "word": "BANCA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 178,
+    "word": "HOTEL",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 179,
+    "word": "RISTORANTE",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 180,
+    "word": "PIZZERIA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 181,
+    "word": "BAR",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 182,
+    "word": "STAZIONI",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 183,
+    "word": "PORTO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 184,
+    "word": "PISCINA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 185,
+    "word": "PALESTRA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 186,
+    "word": "CHIESA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 187,
+    "word": "CASTELLO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 188,
+    "word": "MERCATO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 189,
+    "word": "SPIAGGIA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 190,
+    "word": "BOSCO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 191,
+    "word": "DESERTO",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 192,
+    "word": "ISOLA",
+    "category": "Luoghi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 193,
+    "word": "MONTAGNA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 194,
+    "word": "COLLINA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 195,
+    "word": "PIANURA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 196,
+    "word": "FIUME",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 197,
+    "word": "LAGO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 198,
+    "word": "CASCATA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 199,
+    "word": "MARE",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 200,
+    "word": "OCEANO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 201,
+    "word": "ALBERO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 202,
+    "word": "FIORE",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 203,
+    "word": "PRATO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 204,
+    "word": "FOGLIA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 205,
+    "word": "ROCCIA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 206,
+    "word": "SABBIA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 207,
+    "word": "NEVE",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 208,
+    "word": "PIOGGIA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 209,
+    "word": "VENTO",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 210,
+    "word": "TEMPESTA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 211,
+    "word": "FULMINE",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 212,
+    "word": "SOLE",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 213,
+    "word": "LUNA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 214,
+    "word": "STELLA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 215,
+    "word": "NUVOLA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 216,
+    "word": "NEBBIA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 217,
+    "word": "GROTTA",
+    "category": "Natura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 218,
+    "word": "AUTO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 219,
+    "word": "AUTOBUS",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 220,
+    "word": "TRENO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 221,
+    "word": "AEREO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 222,
+    "word": "ELICOTTERO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 223,
+    "word": "NAVE",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 224,
+    "word": "BARCA",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 225,
+    "word": "CAMION",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 226,
+    "word": "MOTO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 227,
+    "word": "MONOPATTINO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 228,
+    "word": "TAXI",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 229,
+    "word": "FUNIVIA",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 230,
+    "word": "TRATTORE",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 231,
+    "word": "CARRO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 232,
+    "word": "RAZZO",
+    "category": "Trasporti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 233,
+    "word": "CHIAVE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 234,
+    "word": "PORTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 235,
+    "word": "FINESTRA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 236,
+    "word": "LIBRO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 237,
+    "word": "QUADERNO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 238,
+    "word": "PENNA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 239,
+    "word": "MATITA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 240,
+    "word": "GOMMA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 241,
+    "word": "RIGA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 242,
+    "word": "BUSTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 243,
+    "word": "TIMBRO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 244,
+    "word": "SCONTRINO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 245,
+    "word": "MONETA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 246,
+    "word": "BANCONOTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 247,
+    "word": "CARTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 248,
+    "word": "BIGLIETTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 249,
+    "word": "OCCHIALI",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 250,
+    "word": "PETTINE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 251,
+    "word": "SPAZZOLA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 252,
+    "word": "ASCIUGAMANO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 253,
+    "word": "SAPONE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 254,
+    "word": "OMBRELLO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 255,
+    "word": "BOTTIGLIA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 256,
+    "word": "BICCHIERE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 257,
+    "word": "PIATTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 258,
+    "word": "FORCHETTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 259,
+    "word": "COLTELLO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 260,
+    "word": "CUCCHIAIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 261,
+    "word": "TAZZA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 262,
+    "word": "VASO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 263,
+    "word": "CESTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 264,
+    "word": "SACCHETTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 265,
+    "word": "CORDA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 266,
+    "word": "CATENA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 267,
+    "word": "LUCCHETTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 268,
+    "word": "CAMPANA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 269,
+    "word": "FISCHIETTO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 270,
+    "word": "MARTELLO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 271,
+    "word": "TENAGLIA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 272,
+    "word": "CHIODO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 273,
+    "word": "VITE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 274,
+    "word": "PALA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 275,
+    "word": "RASTELLO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 276,
+    "word": "SECCHIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 277,
+    "word": "INNAFFIATOIO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 278,
+    "word": "SCOPE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 279,
+    "word": "TAPPETINO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 280,
+    "word": "PALLONE",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 281,
+    "word": "RACCHETTA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 282,
+    "word": "RETE",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 283,
+    "word": "PORTA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 284,
+    "word": "TROFEO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 285,
+    "word": "MEDAGLIA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 286,
+    "word": "COPPA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 287,
+    "word": "PISCINA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 288,
+    "word": "TRAMPOLINO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 289,
+    "word": "PATINI",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 290,
+    "word": "SKI",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 291,
+    "word": "SLITTA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 292,
+    "word": "TENNIS",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 293,
+    "word": "CALCIO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 294,
+    "word": "BASKET",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 295,
+    "word": "GOLF",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 296,
+    "word": "BOXE",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 297,
+    "word": "CORSA",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 298,
+    "word": "SALTO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 299,
+    "word": "NUOTO",
+    "category": "Sport",
+    "difficulty": "facile"
+  },
+  {
+    "id": 300,
+    "word": "VIOLINO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 301,
+    "word": "FLAUTO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 302,
+    "word": "TAMBURO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 303,
+    "word": "TROMBA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 304,
+    "word": "SASSOFONO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 305,
+    "word": "ARPA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 306,
+    "word": "XILOFONO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 307,
+    "word": "CLARINETTO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 308,
+    "word": "FISARMONICA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 309,
+    "word": "TRIANGOLO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 310,
+    "word": "PIATTI",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 311,
+    "word": "SPARTITO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 312,
+    "word": "NOTA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 313,
+    "word": "CANZONE",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 314,
+    "word": "DISCO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 315,
+    "word": "CUFFIE",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 316,
+    "word": "CASSA",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 317,
+    "word": "CORO",
+    "category": "Musica",
+    "difficulty": "facile"
+  },
+  {
+    "id": 318,
+    "word": "BAMBOLA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 319,
+    "word": "ROBOT",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 320,
+    "word": "COSTRUZIONI",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 321,
+    "word": "PUZZLE",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 322,
+    "word": "CARTE",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 323,
+    "word": "DADI",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 324,
+    "word": "SCACCHI",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 325,
+    "word": "DAMA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 326,
+    "word": "DOMINO",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 327,
+    "word": "TOMBOLA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 328,
+    "word": "YO-YO",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 329,
+    "word": "PALLONCINO",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 330,
+    "word": "SLITTA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 331,
+    "word": "ALTALENA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 332,
+    "word": "SCIVOLO",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 333,
+    "word": "GIOSTRA",
+    "category": "Giochi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 334,
+    "word": "GHIACCIO",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 335,
+    "word": "SCIARPA",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 336,
+    "word": "GUANTI",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 337,
+    "word": "CAPPELLO",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 338,
+    "word": "CAPPOTTO",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 339,
+    "word": "STUFA",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 340,
+    "word": "CAMINO",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 341,
+    "word": "COPERTA",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 342,
+    "word": "ALBERO DI NATALE",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 343,
+    "word": "PRESEPE",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 344,
+    "word": "CALZA",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 345,
+    "word": "REGALO",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 346,
+    "word": "STIVALI",
+    "category": "Inverno",
+    "difficulty": "facile"
+  },
+  {
+    "id": 347,
+    "word": "PENNARELLO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 348,
+    "word": "PASTELLO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 349,
+    "word": "COLLA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 350,
+    "word": "COMPASSO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 351,
+    "word": "SQUADRA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 352,
+    "word": "ASTUCCIO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 353,
+    "word": "DIARIO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 354,
+    "word": "BANCO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 355,
+    "word": "CARTELLA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 356,
+    "word": "GESSETTO",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 357,
+    "word": "CIMOSA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 358,
+    "word": "MAPPA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 359,
+    "word": "GLOBI",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 360,
+    "word": "ATLANTE",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 361,
+    "word": "PAGINA",
+    "category": "Scuola",
+    "difficulty": "facile"
+  },
+  {
+    "id": 362,
+    "word": "TELEVISORE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 363,
+    "word": "LAVATRICE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 364,
+    "word": "LAVASTOVIGLIE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 365,
+    "word": "FORNO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 366,
+    "word": "MICROONDE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 367,
+    "word": "TOSTAPANE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 368,
+    "word": "FRULLATORE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 369,
+    "word": "ASPIRAPOLVERE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 370,
+    "word": "FERRO DA STIRO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 371,
+    "word": "FON",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 372,
+    "word": "CONDIZIONATORE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 373,
+    "word": "SVEGLIA",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 374,
+    "word": "RADIO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 375,
+    "word": "COMPUTER",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 376,
+    "word": "TABLET",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 377,
+    "word": "TELEFONO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 378,
+    "word": "STAMPANTE",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 379,
+    "word": "TASTIERA",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 380,
+    "word": "SCHERMO",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 381,
+    "word": "MONITOR",
+    "category": "Elettrodomestici",
+    "difficulty": "facile"
+  },
+  {
+    "id": 382,
+    "word": "STRADA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 383,
+    "word": "MARCIAPIEDE",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 384,
+    "word": "PIAZZA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 385,
+    "word": "VIA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 386,
+    "word": "INCORCIO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 387,
+    "word": "PONTE",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 388,
+    "word": "GALLERIA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 389,
+    "word": "PANCHINA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 390,
+    "word": "CESTINO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 391,
+    "word": "CANDELABRO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 392,
+    "word": "EDICOLA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 393,
+    "word": "CHIOSCO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 394,
+    "word": "FONTANA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 395,
+    "word": "STATUA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 396,
+    "word": "CORTE",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 397,
+    "word": "VICOLO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 398,
+    "word": "QUARTIERE",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 399,
+    "word": "PERIFERIA",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 400,
+    "word": "CENTRO",
+    "category": "Città",
+    "difficulty": "facile"
+  },
+  {
+    "id": 401,
+    "word": "SCAFO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 402,
+    "word": "TIMONE",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 403,
+    "word": "ANCORA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 404,
+    "word": "VELA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 405,
+    "word": "REMO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 406,
+    "word": "ONDA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 407,
+    "word": "SCOGLIO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 408,
+    "word": "RIVA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 409,
+    "word": "MOLO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 410,
+    "word": "CONCHIGLIA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 411,
+    "word": "CORALLO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 412,
+    "word": "ALGA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 413,
+    "word": "STELLA MARINA",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 414,
+    "word": "SALVAGENTE",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 415,
+    "word": "SDRAIO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 416,
+    "word": "LETTINO",
+    "category": "Mare",
+    "difficulty": "facile"
+  },
+  {
+    "id": 417,
+    "word": "SAPONE",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 418,
+    "word": "DENTIFRICIO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 419,
+    "word": "SHAMPOO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 420,
+    "word": "BAGNO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 421,
+    "word": "PETTINE",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 422,
+    "word": "FORBICE",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 423,
+    "word": "TAGLIAUNGHIE",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 424,
+    "word": "LIMA",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 425,
+    "word": "SPUGNA",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 426,
+    "word": "CARTA IGIENICA",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 427,
+    "word": "FAZZOLETTO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 428,
+    "word": "COTONE",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 429,
+    "word": "SPECCHIETTO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 430,
+    "word": "PROFUMO",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 431,
+    "word": "CREMA",
+    "category": "Igiene",
+    "difficulty": "facile"
+  },
+  {
+    "id": 432,
+    "word": "RE",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 433,
+    "word": "REGINA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 434,
+    "word": "PRINCIPE",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 435,
+    "word": "PRINCIPESSA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 436,
+    "word": "CAVALIERE",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 437,
+    "word": "SCUDIERO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 439,
+    "word": "SPADA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 440,
+    "word": "SCUDO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 441,
+    "word": "ARMATURA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 442,
+    "word": "ELMO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 443,
+    "word": "ARCO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 444,
+    "word": "FRECCIA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 445,
+    "word": "LANCIA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 446,
+    "word": "CARROZZA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 447,
+    "word": "MURA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 448,
+    "word": "TORRE",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 449,
+    "word": "FOSSATO",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 450,
+    "word": "CORONA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 451,
+    "word": "SOGLIA",
+    "category": "Storia",
+    "difficulty": "facile"
+  },
+  {
+    "id": 452,
+    "word": "ROVINE",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 453,
+    "word": "DUOMO",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 454,
+    "word": "BASILICA",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 455,
+    "word": "OBELISCO",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 456,
+    "word": "STATUA DELLA LIBERTÀ",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 457,
+    "word": "PARTENONE",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 458,
+    "word": "BIG BEN",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 459,
+    "word": "SFINGE",
+    "category": "Monumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 460,
+    "word": "ANFITEATRO",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 461,
+    "word": "CUPOLA",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 462,
+    "word": "COLONNA",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 463,
+    "word": "PILASTRO",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 464,
+    "word": "FACCIATA",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 465,
+    "word": "PORTICO",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 466,
+    "word": "BALCONE",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 467,
+    "word": "TERRAZZA",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 468,
+    "word": "TETTO",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 470,
+    "word": "SCALINATA",
+    "category": "Architettura",
+    "difficulty": "facile"
+  },
+  {
+    "id": 471,
+    "word": "CIRCO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 472,
+    "word": "PALCO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 473,
+    "word": "SIPARIO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 474,
+    "word": "CINEMA",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 475,
+    "word": "MASCHERA",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 476,
+    "word": "COSTUME",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 477,
+    "word": "TRUCCO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 478,
+    "word": "PARRUCCA",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 479,
+    "word": "MARIONETTA",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 480,
+    "word": "BURATTINO",
+    "category": "Spettacolo",
+    "difficulty": "facile"
+  },
+  {
+    "id": 481,
+    "word": "LENTE",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 482,
+    "word": "PRISMA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 483,
+    "word": "CALCOLATRICE",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 484,
+    "word": "PROVETTA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 485,
+    "word": "MAGNETE",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 486,
+    "word": "CALAMITA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 487,
+    "word": "PIPETTA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 488,
+    "word": "PILA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 489,
+    "word": "BATTERIA",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 490,
+    "word": "LENTE D'INGRANDIMENTO",
+    "category": "Scienza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 491,
+    "word": "RIGHELLO",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 492,
+    "word": "METRO",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 493,
+    "word": "BILANCIA",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 494,
+    "word": "OROLOGIO A SABBIA",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 495,
+    "word": "CRONOMETRO",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 496,
+    "word": "CONTACHILOMETRI",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 497,
+    "word": "SQUADRA",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 498,
+    "word": "GONOMETRO",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 499,
+    "word": "ARATRO",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 500,
+    "word": "CACCIAVITE",
+    "category": "Strumenti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 501,
+    "word": "MAPPA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 502,
+    "word": "PASSAPORTO",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 503,
+    "word": "GUIDA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 504,
+    "word": "SOUVENIR",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 505,
+    "word": "VALIGETTA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 506,
+    "word": "CARTOLINA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 507,
+    "word": "CAMPER",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 508,
+    "word": "TENDA",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 509,
+    "word": "SACCO A PELO",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 510,
+    "word": "BAGAGLIO",
+    "category": "Viaggi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 511,
+    "word": "GIACHETTA",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 512,
+    "word": "CINTURA",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 513,
+    "word": "ESTINTORE",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 514,
+    "word": "LUCCHETTO",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 515,
+    "word": "SBARRA",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 516,
+    "word": "ALLARME",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 517,
+    "word": "CANCELLO",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 518,
+    "word": "RINGHIERA",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 519,
+    "word": "FUSIBILE",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 520,
+    "word": "LACCIO",
+    "category": "Sicurezza",
+    "difficulty": "facile"
+  },
+  {
+    "id": 522,
+    "word": "TAGLIERE",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 523,
+    "word": "MESTOLO",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 524,
+    "word": "FRUSTA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 525,
+    "word": "PADELLA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 526,
+    "word": "GRATTUGIA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 527,
+    "word": "SCOLAPASTA",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 528,
+    "word": "MATTARELLO",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 529,
+    "word": "GREMBULE",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 530,
+    "word": "CANOVACCIO",
+    "category": "Cucina",
+    "difficulty": "facile"
+  },
+  {
+    "id": 531,
+    "word": "TRIBÙ",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 532,
+    "word": "INDIANI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 533,
+    "word": "PIRATI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 534,
+    "word": "VICHINGHI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 535,
+    "word": "ROMANI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 536,
+    "word": "GRECI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 537,
+    "word": "EGIZI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 538,
+    "word": "NOMADI",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 540,
+    "word": "MAYA",
+    "category": "Popoli",
+    "difficulty": "facile"
+  },
+  {
+    "id": 541,
+    "word": "RUOTA PANORAMICA",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 542,
+    "word": "CAROSELLO",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 543,
+    "word": "LUNA PARK",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 545,
+    "word": "ZOO",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 546,
+    "word": "ACQUAPARK",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 547,
+    "word": "PICNIC",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 548,
+    "word": "FESTA",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 549,
+    "word": "BALLO",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 550,
+    "word": "CONCERTO",
+    "category": "Svago",
+    "difficulty": "facile"
+  },
+  {
+    "id": 551,
+    "word": "CIABATTE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 552,
+    "word": "SCARPE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 553,
+    "word": "CALZINI",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 554,
+    "word": "PANTALONI",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 555,
+    "word": "MAGLIA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 556,
+    "word": "FELPA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 557,
+    "word": "GIACCA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 558,
+    "word": "GONNA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 559,
+    "word": "ABITO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 560,
+    "word": "CRAVATTA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 561,
+    "word": "FASCIA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 562,
+    "word": "ANELLO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 563,
+    "word": "BRACCIALE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 564,
+    "word": "COLLANA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 565,
+    "word": "ORECCHINO",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 566,
+    "word": "SPILLA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 567,
+    "word": "BOTTONE",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 568,
+    "word": "CERNIERA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 569,
+    "word": "TASCA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 570,
+    "word": "CINTURA",
+    "category": "Oggetti",
+    "difficulty": "facile"
+  },
+  {
+    "id": 571,
+    "word": "BELLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 572,
+    "word": "BRUTTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 573,
+    "word": "GRANDE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 574,
+    "word": "PICCOLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 575,
+    "word": "ALTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 576,
+    "word": "BASSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 577,
+    "word": "LUNGO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 578,
+    "word": "CORTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 579,
+    "word": "LARGO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 580,
+    "word": "STRETTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 581,
+    "word": "CALDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 582,
+    "word": "FREDDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 583,
+    "word": "BUONO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 584,
+    "word": "CATTIVO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 585,
+    "word": "NUOVO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 586,
+    "word": "VECCHIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 587,
+    "word": "GIOVANE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 588,
+    "word": "ANZIANO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 589,
+    "word": "RAPIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 590,
+    "word": "LENTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 591,
+    "word": "FORTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 592,
+    "word": "DEBOLE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 593,
+    "word": "RICCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 594,
+    "word": "POVERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 595,
+    "word": "FELICE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 596,
+    "word": "TRISTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 597,
+    "word": "ALLEGRO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 598,
+    "word": "ARRABBIATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 599,
+    "word": "MITE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 600,
+    "word": "CALMO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 601,
+    "word": "SERENO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 602,
+    "word": "FACILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 603,
+    "word": "DIFFICILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 604,
+    "word": "DURO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 605,
+    "word": "MORBIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 606,
+    "word": "TENERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 607,
+    "word": "LISCIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 608,
+    "word": "RUGOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 609,
+    "word": "PESANTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 610,
+    "word": "LEGGERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 611,
+    "word": "PULITO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 612,
+    "word": "SPORCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 613,
+    "word": "PIENO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 614,
+    "word": "VUOTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 615,
+    "word": "DOLCE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 616,
+    "word": "AMARO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 617,
+    "word": "SALATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 618,
+    "word": "ACIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 619,
+    "word": "ASPTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 620,
+    "word": "SQUISITO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 621,
+    "word": "SECCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 622,
+    "word": "BAGNATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 623,
+    "word": "UMIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 624,
+    "word": "LUMINOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 625,
+    "word": "BUIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 626,
+    "word": "SCURO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 627,
+    "word": "CHIARO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 628,
+    "word": "ROSSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 629,
+    "word": "BLU",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 630,
+    "word": "VERDE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 631,
+    "word": "GIALLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 632,
+    "word": "NERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 633,
+    "word": "BIANCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 634,
+    "word": "GRIGIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 635,
+    "word": "ROSA",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 636,
+    "word": "VIOLA",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 637,
+    "word": "MARRONE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 638,
+    "word": "ARANCIONE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 639,
+    "word": "CALDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 640,
+    "word": "TIEPIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 641,
+    "word": "GHIACCIATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 642,
+    "word": "PROFUMATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 643,
+    "word": "PUZZOLENTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 644,
+    "word": "LONTANO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 645,
+    "word": "VICINO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 646,
+    "word": "PRIMITIVO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 647,
+    "word": "MODERNO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 648,
+    "word": "ANTICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 649,
+    "word": "SIMPATICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 650,
+    "word": "ANTIPATICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 651,
+    "word": "GENTILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 652,
+    "word": "EDUCATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 653,
+    "word": "SGARBATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 654,
+    "word": "CORAGGIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 655,
+    "word": "PAUROSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 656,
+    "word": "TIMIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 657,
+    "word": "SINCERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 658,
+    "word": "ONESTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 659,
+    "word": "PIGRO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 660,
+    "word": "ATTIVO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 661,
+    "word": "STUPEFACENTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 662,
+    "word": "BELLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 663,
+    "word": "GRAZIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 664,
+    "word": "CARINO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 665,
+    "word": "ORRIBILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 666,
+    "word": "MERAVIGLIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 667,
+    "word": "FANTASTICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 668,
+    "word": "STUPENDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 669,
+    "word": "INCRIDIBILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 670,
+    "word": "PERFETTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 671,
+    "word": "SANO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 672,
+    "word": "MALATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 673,
+    "word": "STANCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 674,
+    "word": "RI POSATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 675,
+    "word": "SVEGLIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 676,
+    "word": "ADDORMENTATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 677,
+    "word": "IN BIANCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 678,
+    "word": "APERTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 679,
+    "word": "CHIUSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 680,
+    "word": "LIBERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 681,
+    "word": "OCCUPATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 682,
+    "word": "PRONTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 683,
+    "word": "PREPARATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 684,
+    "word": "LISCIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 685,
+    "word": "ROVIDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 686,
+    "word": "ROTONDO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 687,
+    "word": "QUADRATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 688,
+    "word": "TRIANGOLARE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 689,
+    "word": "LISCIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 690,
+    "word": "APPUNTITO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 691,
+    "word": "CORTESE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 692,
+    "word": "GENEROSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 693,
+    "word": "AVARO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 694,
+    "word": "GOLOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 695,
+    "word": "GELOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 696,
+    "word": "INVIDIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 697,
+    "word": "ORGLIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 698,
+    "word": "UMILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 699,
+    "word": "SAGGIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 700,
+    "word": "FOLE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 701,
+    "word": "PRUDENTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 702,
+    "word": "FURBO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 703,
+    "word": "ASTUTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 704,
+    "word": "INGENUO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 705,
+    "word": "SEMPLICE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 706,
+    "word": "COMPLESSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 707,
+    "word": "CHIARO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 708,
+    "word": "CONFUSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 709,
+    "word": "SILENZIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 710,
+    "word": "RUMOROSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 711,
+    "word": "TRANQUILLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 712,
+    "word": "AGITATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 713,
+    "word": "NERVOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 714,
+    "word": "DISTRATTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 715,
+    "word": "ATTENTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 716,
+    "word": "PRECISO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 717,
+    "word": "SICURO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 718,
+    "word": "PERICOLOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 719,
+    "word": "COMODO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 720,
+    "word": "SCOMODO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 721,
+    "word": "RICCO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 722,
+    "word": "PREZIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 723,
+    "word": "RARO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 724,
+    "word": "COMUNE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 725,
+    "word": "NORMALE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 726,
+    "word": "STRANO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 727,
+    "word": "BARRATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 728,
+    "word": "CORRETTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 729,
+    "word": "SBAGLIATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 730,
+    "word": "GIUSTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 731,
+    "word": "INGIUSTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 732,
+    "word": "FALSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 733,
+    "word": "VERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 734,
+    "word": "REALE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 735,
+    "word": "INVENTATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 736,
+    "word": "FINTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 737,
+    "word": "INTERO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 738,
+    "word": "ROTTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 739,
+    "word": "ROVINATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 740,
+    "word": "INTERESSANTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 741,
+    "word": "NOIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 742,
+    "word": "DIVERTENTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 743,
+    "word": "BUFFO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 744,
+    "word": "COMICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 745,
+    "word": "SERIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 746,
+    "word": "MISTERIOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 747,
+    "word": "SEGRETO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 748,
+    "word": "FAMOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 749,
+    "word": "SCONOSCIUTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 750,
+    "word": "UNICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 751,
+    "word": "DIVERSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 752,
+    "word": "UGUALE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 753,
+    "word": "SIMILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 754,
+    "word": "SOLO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 755,
+    "word": "INSIEME",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 756,
+    "word": "COMPAGNO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 757,
+    "word": "SELVAGGIO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 758,
+    "word": "DOMESTICO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 759,
+    "word": "VELENOSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 760,
+    "word": "INOFFENSIVO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 761,
+    "word": "SPESSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 762,
+    "word": "SOTTILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 763,
+    "word": "FINO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 764,
+    "word": "GROSSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 765,
+    "word": "MAGRO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 766,
+    "word": "GRASSO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 767,
+    "word": "ROBUSTO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 768,
+    "word": "DELICATO",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 769,
+    "word": "FRAGILE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  },
+  {
+    "id": 770,
+    "word": "RESISTENTE",
+    "category": "Aggettivi",
+    "difficulty": "facile"
+  }
 ]
