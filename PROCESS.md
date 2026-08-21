@@ -36,7 +36,12 @@ Tutto il codice del progetto deve rispettare rigorosamente le seguenti linee gui
   - 2 passi disponibili per turno, visualizzati con badge visivo interattivo (`PassIndicator.jsx`).
   - Blocco automatico del tasto Passo al raggiungimento di `0` passi residui.
 - **Timer & Regole**:
-  - Countdown standard 60s, +1 punto per risposte esatte, -1 per errori e passi.
+  - Countdown standard 60s, +1 punto per risposte esatte, -1 per errori. **Passo = 0 punti (nessuna detrazione)**.
+  - Cliccando su **+1 / -1 / Passo**, il timer si **ferma automaticamente** per permettere alla squadra di prepararsi.
+  - Un pulsante centrale **AVVIA TEMPO / FERMA TEMPO** (grande e touch-friendly) è posizionato tra il timer circolare e il display del punteggio.
+- **No Zoom Mobile**:
+  - `index.html`: viewport con `user-scalable=no, viewport-fit=cover`.
+  - `main.jsx`: blocco via JS di `gesturestart`, `gesturechange`, `gestureend`, `touchmove` multi-touch, doppio-tap zoom.
 - **Audio Engine Studio TV (`soundSynthesizer.js`)**:
   - Sintesi audio nativa tramite Web Audio API (jingle 3-2-1, dong risposta esatta, buzzer errore, swoosh passo, ticchettio e sirena tempo scaduto).
 
@@ -50,9 +55,9 @@ intesa-vincente/
 │   └── favicon.ico
 ├── src/
 │   ├── config/
-│   │   └── gameConfig.js              # Costanti globali (DEFAULT_MAX_PASSES=2, DEFAULT_TIMER=60)
+│   │   └── gameConfig.js              # Costanti globali (DEFAULT_MAX_PASSES=2, DEFAULT_TIMER=60, PASS=0)
 │   ├── data/
-│   │   └── words.json                 # Mazzo iniziale di parole categorizzate (Cibo, Mestieri, Oggetti, ecc.)
+│   │   └── words.json                 # Mazzo iniziale di parole categorizzate
 │   ├── components/
 │   │   ├── home/
 │   │   │   ├── ModeSelector.jsx       # Selezione 1 Schermo (Standalone) vs 2 Schermi (QR Code)
@@ -61,12 +66,13 @@ intesa-vincente/
 │   │   │   ├── Button.jsx             # Bottone modulare con varianti cromatiche
 │   │   │   ├── Modal.jsx              # Modale generica animata con Framer Motion
 │   │   │   ├── PassIndicator.jsx      # Badge visualizzazione passi (2/2 con indicatori)
-│   │   │   └── AudioToggle.jsx        # Switch muto/audio ON
+│   │   │   ├── AudioToggle.jsx        # Switch muto/audio ON
+│   │   │   └── TimerControlButton.jsx # Pulsante AVVIA/FERMA TEMPO (grande, touch-friendly)
 │   │   ├── standalone/
 │   │   │   └── StandaloneGame.jsx     # Schermata integrata completa per 1 Schermo
 │   │   ├── board/
-│   │   │   ├── GameTimer.jsx          # Countdown circolare SVG con glow di studio
-│   │   │   ├── ScoreDisplay.jsx       # Punteggi animati e statistiche
+│   │   │   ├── GameTimer.jsx          # Countdown circolare SVG (prop compact per mobile)
+│   │   │   ├── ScoreDisplay.jsx       # Punteggi animati e statistiche (prop compact per mobile)
 │   │   │   ├── WordReveal.jsx         # Parola mostrata sul tabellone
 │   │   │   └── TvBoardView.jsx        # Vista completa Tabellone TV per 2 Schermi
 │   │   ├── controller/
@@ -78,7 +84,7 @@ intesa-vincente/
 │   │       └── SettingsForm.jsx       # Modale impostazioni durata e max passi
 │   ├── hooks/
 │   │   ├── useGameTimer.js            # Countdown con pulizia intervalli
-│   │   ├── useGameState.js            # Stato centrale gioco (punti, parole, round)
+│   │   ├── useGameState.js            # Stato centrale gioco (punti, parole, round, toggleTimer)
 │   │   ├── usePassesManager.js        # Gestione passi residui (default 2)
 │   │   └── useSoundEffects.js         # Gestione suoni studio TV
 │   ├── utils/
@@ -88,8 +94,8 @@ intesa-vincente/
 │   ├── styles/
 │   │   └── index.css                  # Tailwind CSS, glow neon e glassmorphism
 │   ├── App.jsx                        # Router e state container principale
-│   └── main.jsx                       # Entrypoint React
-├── .gitignore                         # Esclusione node_modules, dist, .vercel
+│   └── main.jsx                       # Entrypoint React + blocco zoom iOS/Android
+├── .gitignore
 ├── index.html
 ├── progetto.md
 ├── PROCESS.md
@@ -104,31 +110,46 @@ intesa-vincente/
 
 ## 📝 4. Registro delle Sessioni (Changelog)
 
+### Sessione 4 (Timer Stop Automatico, Pulsante Centrale, No Zoom Mobile)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. **`gameConfig.js`**: `POINTS_CONFIG.PASS = 0` — il Passo non sottrae più punti.
+  2. **`useGameState.js`**: In `handleCorrect`, `handleError`, `handlePass` aggiunto `timer.pauseTimer()` — il timer si ferma automaticamente ad ogni parola. Esposta funzione `toggleTimer`.
+  3. **`TimerControlButton.jsx`** [NUOVO]: Pulsante grande touch-friendly AVVIA/FERMA TEMPO, con animazione pulsante quando in pausa.
+  4. **`StandaloneGame.jsx`**: Layout a griglia 3 colonne (Timer | TimerControlButton | Score) in stato PLAYING.
+  5. **`TvBoardView.jsx`**: Stessa griglia 3 colonne per la vista Tabellone TV.
+  6. **`MobileControllerView.jsx`**: Aggiunta barra Timer mini + TimerControlButton + Score mini in stato PLAYING.
+  7. **`GameTimer.jsx`**: Aggiunta prop `compact` per ridurre le dimensioni nel controller mobile.
+  8. **`ScoreDisplay.jsx`**: Aggiunta prop `compact` per testo ridotto nel controller mobile.
+  9. **`index.html`**: Viewport meta aggiornata con `user-scalable=no, viewport-fit=cover`.
+  10. **`main.jsx`**: Blocco JS di pinch-to-zoom (gesturestart/change/end), touchmove multi-touch e double-tap zoom per iOS/Android.
+  11. **Build verificata** ✅ — 0 errori, 2247 moduli.
+  12. **Push su GitHub** effettuato.
+
 ### Sessione 3 (Autenticazione GitHub CLI & Push su Remote Main)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:
   1. Configurato **GitHub CLI (`gh.exe`)** su disco `D:\gh`.
-  2. Autenticato con successo l'account utente GitHub `marco-devcode` via GitHub Device Flow.
-  3. Effettuato il **push completo** del branch `main` sul repository remoto [`https://github.com/marco-devcode/intesa-vincente`](https://github.com/marco-devcode/intesa-vincente).
-  4. Repository online e pronto per il deploy su Vercel.
+  2. Autenticato con successo l'account `marco-devcode` via GitHub Device Flow.
+  3. Effettuato il **push completo** del branch `main` su [`https://github.com/marco-devcode/intesa-vincente`](https://github.com/marco-devcode/intesa-vincente).
 
 ### Sessione 2 (Preparazione Repository Git & Deploy Vercel / GitHub)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:
-  1. Configurato **Git per Windows (v2.47.1)** su disco `D:\Git` e aggiunto permanentemente al PATH di sistema.
+  1. Configurato **Git per Windows (v2.47.1)** su disco `D:\Git` e aggiunto al PATH.
   2. Creato `.gitignore` e `README.md`.
-  3. Inizializzato repository locale (`git init`) e completato il primo commit.
+  3. Inizializzato repository locale e completato il primo commit.
 
 ### Sessione 1 (Inizializzazione Progetto, Architettura & Implementazione Completa)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:
-  1. Setup ambiente Node.js v22 LTS e npm su `D:\nodejs` e cache su `D:\npm-cache`.
+  1. Setup ambiente Node.js v22 LTS e npm su `D:\nodejs`, cache su `D:\npm-cache`.
   2. Inizializzato progetto Vite + React + Tailwind CSS con icone, suoni e animazioni.
-  3. Implementate le modalità 1 Schermo (Standalone) e 2 Schermi (QR Code), gestione dei 2 passi e sintetizzatore audio studio TV.
+  3. Implementate modalità 1 Schermo (Standalone) e 2 Schermi (QR Code), gestione dei 2 passi e sintetizzatore audio studio TV.
 
 ---
 
 ## 🎯 5. Prossimi Passi (Next Steps)
 
 1. [x] Codice sincronizzato e pubblicato su GitHub ([`marco-devcode/intesa-vincente`](https://github.com/marco-devcode/intesa-vincente)).
-2. [ ] Effettuare il deploy live su Vercel con 1 click importando il repository da [`vercel.com/new`](https://vercel.com/new).
+2. [ ] Effettuare il deploy live su Vercel importando il repository da [`vercel.com/new`](https://vercel.com/new).

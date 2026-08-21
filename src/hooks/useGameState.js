@@ -79,6 +79,16 @@ export function useGameState(config = {}) {
     }, 900);
   }, [sounds, timer]);
 
+  const toggleTimer = useCallback(() => {
+    if (gameStatus !== GAME_STATUS.PLAYING) return;
+    
+    if (timer.isRunning) {
+      timer.pauseTimer();
+    } else {
+      timer.resumeTimer();
+    }
+  }, [gameStatus, timer]);
+
   const handleCorrect = useCallback(() => {
     if (gameStatus !== GAME_STATUS.PLAYING) return;
     
@@ -91,7 +101,9 @@ export function useGameState(config = {}) {
     }
     
     setCurrentWordIndex((prev) => prev + 1);
-  }, [gameStatus, sounds, currentWord]);
+    // Ferma automaticamente il tempo fino al prossimo riavvio!
+    timer.pauseTimer();
+  }, [gameStatus, sounds, currentWord, timer]);
 
   const handleError = useCallback(() => {
     if (gameStatus !== GAME_STATUS.PLAYING) return;
@@ -105,7 +117,9 @@ export function useGameState(config = {}) {
     }
 
     setCurrentWordIndex((prev) => prev + 1);
-  }, [gameStatus, sounds, currentWord]);
+    // Ferma automaticamente il tempo fino al prossimo riavvio!
+    timer.pauseTimer();
+  }, [gameStatus, sounds, currentWord, timer]);
 
   const handlePass = useCallback(() => {
     if (gameStatus !== GAME_STATUS.PLAYING) return;
@@ -118,15 +132,20 @@ export function useGameState(config = {}) {
     const consumed = passes.consumePass();
     if (consumed) {
       sounds.playPass();
-      setScore((prev) => Math.max(0, prev + POINTS_CONFIG.PASS));
+      // Non toglie punti quando si clicca su Passo (POINTS_CONFIG.PASS = 0)
+      if (POINTS_CONFIG.PASS !== 0) {
+        setScore((prev) => Math.max(0, prev + POINTS_CONFIG.PASS));
+      }
       
       if (currentWord) {
         setHistory((prev) => [...prev, { word: currentWord.word, result: 'pass' }]);
       }
 
       setCurrentWordIndex((prev) => prev + 1);
+      // Ferma automaticamente il tempo fino al prossimo riavvio!
+      timer.pauseTimer();
     }
-  }, [gameStatus, passes, sounds, currentWord]);
+  }, [gameStatus, passes, sounds, currentWord, timer]);
 
   const resetGame = useCallback(() => {
     setDeck(shuffleDeck(initialWords));
@@ -154,6 +173,7 @@ export function useGameState(config = {}) {
     passes,
     sounds,
     startCountdownAndPlay,
+    toggleTimer,
     handleCorrect,
     handleError,
     handlePass,

@@ -8,11 +8,14 @@ import { ScoreDisplay } from './ScoreDisplay';
 import { WordReveal } from './WordReveal';
 import { PassIndicator } from '../common/PassIndicator';
 import { AudioToggle } from '../common/AudioToggle';
+import { TimerControlButton } from '../common/TimerControlButton';
 import { Button } from '../common/Button';
 import { GAME_STATUS } from '../../config/gameConfig';
 
 /**
  * Schermata Tabellone TV per Modalità 2 Schermi
+ * Mostra timer, punteggio e parola sul grande schermo.
+ * Il TimerControlButton è posizionato al centro tra Timer e ScoreDisplay.
  */
 export function TvBoardView({ config, roomCode, onBack }) {
   const game = useGameState(config);
@@ -34,7 +37,7 @@ export function TvBoardView({ config, roomCode, onBack }) {
         <div className="flex items-center gap-3">
           <button
             onClick={onBack}
-            className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-700/60"
+            className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-300 border border-slate-700/60 cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
           </button>
@@ -56,7 +59,7 @@ export function TvBoardView({ config, roomCode, onBack }) {
           />
           <button
             onClick={game.resetGame}
-            className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-700/60"
+            className="p-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-700/60 cursor-pointer"
             title="Reset"
           >
             <RotateCcw className="w-4 h-4" />
@@ -102,30 +105,44 @@ export function TvBoardView({ config, roomCode, onBack }) {
 
         {game.gameStatus === GAME_STATUS.PLAYING && (
           <div className="w-full flex flex-col items-center space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-3xl bg-slate-900/70 border border-blue-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl">
-              <GameTimer
-                timeLeft={game.timer.timeLeft}
-                totalTime={config.timerSeconds}
+            {/* Timer | Avvia/Ferma | Punteggio - griglia a 3 colonne */}
+            <div className="grid grid-cols-3 gap-4 items-center w-full max-w-3xl bg-slate-900/70 border border-blue-500/30 rounded-3xl p-6 sm:p-8 shadow-2xl">
+              <div className="flex justify-center">
+                <GameTimer
+                  timeLeft={game.timer.timeLeft}
+                  totalTime={config.timerSeconds}
+                  isRunning={game.timer.isRunning}
+                />
+              </div>
+
+              {/* Pulsante Avvia/Ferma al centro */}
+              <TimerControlButton
                 isRunning={game.timer.isRunning}
+                onToggle={game.toggleTimer}
               />
-              <ScoreDisplay
-                score={game.score}
-                correctCount={game.correctCount}
-                errorCount={game.errorCount}
-              />
+
+              <div className="flex justify-center">
+                <ScoreDisplay
+                  score={game.score}
+                  correctCount={game.correctCount}
+                  errorCount={game.errorCount}
+                />
+              </div>
             </div>
 
-            {/* In modalità TV mostriamo la parola target oscurata o rivelata */}
+            {/* Parola sul tabellone */}
             <WordReveal
               word={game.currentWord?.word}
               category={game.currentWord?.category}
               isVisible={true}
             />
 
-            {/* Controlli di regia di emergenza */}
+            {/* Controlli di regia d'emergenza */}
             <div className="flex items-center gap-3">
               <Button size="sm" variant="correct" onClick={game.handleCorrect}>+1 Giusta</Button>
-              <Button size="sm" variant="pass" onClick={game.handlePass} disabled={!game.passes.canPass}>Passo ({game.passes.remainingPasses})</Button>
+              <Button size="sm" variant="pass" onClick={game.handlePass} disabled={!game.passes.canPass}>
+                Passo ({game.passes.remainingPasses})
+              </Button>
               <Button size="sm" variant="error" onClick={game.handleError}>-1 Errore</Button>
             </div>
           </div>

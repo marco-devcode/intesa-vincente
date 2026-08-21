@@ -9,7 +9,7 @@ export const DEFAULT_MAX_PASSES = 2;
 export const POINTS_CONFIG = {
   CORRECT: 1,
   ERROR: -1,
-  PASS: -1,
+  PASS: 0, // Nessuna detrazione punti sul Passo!
 };
 
 export const GAME_MODES = {

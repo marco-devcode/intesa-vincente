@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 import { ArrowLeft, RotateCcw, Play, Trophy, Sparkles, CheckCircle2, XCircle, SkipForward } from 'lucide-react';
 import { useGameState } from '../../hooks/useGameState';
@@ -9,6 +9,7 @@ import { CurrentWordCard } from '../controller/CurrentWordCard';
 import { ActionPad } from '../controller/ActionPad';
 import { PassIndicator } from '../common/PassIndicator';
 import { AudioToggle } from '../common/AudioToggle';
+import { TimerControlButton } from '../common/TimerControlButton';
 import { Button } from '../common/Button';
 import { GAME_STATUS } from '../../config/gameConfig';
 
@@ -30,12 +31,12 @@ export function StandaloneGame({ config, onBack }) {
   }, [game.gameStatus, game.score]);
 
   return (
-    <div className="w-full max-w-2xl mx-auto px-4 py-4 min-h-screen flex flex-col justify-between">
+    <div className="w-full max-w-2xl mx-auto px-3 sm:px-4 py-3 min-h-screen flex flex-col justify-between">
       {/* Top Header Bar */}
-      <header className="flex items-center justify-between gap-2 pb-4 border-b border-slate-800">
+      <header className="flex items-center justify-between gap-2 pb-3 border-b border-slate-800">
         <button
           onClick={onBack}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-300 text-xs sm:text-sm font-semibold border border-slate-700/60 transition-all"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-300 text-xs sm:text-sm font-semibold border border-slate-700/60 transition-all cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Esci</span>
@@ -55,7 +56,7 @@ export function StandaloneGame({ config, onBack }) {
           {game.gameStatus !== GAME_STATUS.IDLE && (
             <button
               onClick={game.resetGame}
-              className="p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-700/60 transition-all"
+              className="p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-700/60 transition-all cursor-pointer"
               title="Resetta Partita"
             >
               <RotateCcw className="w-4 h-4" />
@@ -65,7 +66,7 @@ export function StandaloneGame({ config, onBack }) {
       </header>
 
       {/* Main Body Switch based on Game Status */}
-      <main className="flex-1 flex flex-col items-center justify-center my-4">
+      <main className="flex-1 flex flex-col items-center justify-center my-3">
         {/* STATO: IDLE (In attesa di avvio) */}
         {game.gameStatus === GAME_STATUS.IDLE && (
           <motion.div
@@ -83,7 +84,8 @@ export function StandaloneGame({ config, onBack }) {
 
             <p className="text-slate-300 text-sm mb-6 leading-relaxed">
               Il turno durerà <strong>{config.timerSeconds} secondi</strong>.<br />
-              I suggeritori avranno a disposizione <strong>{config.maxPasses} passi</strong> per saltare parole difficili.
+              I suggeritori avranno a disposizione <strong>{config.maxPasses} passi</strong> senza perdita di punti.<br />
+              <span className="text-amber-400 font-semibold">Nota:</span> Il tempo si ferma automaticamente ad ogni parola indovinata, errore o passo!
             </p>
 
             <Button
@@ -119,19 +121,32 @@ export function StandaloneGame({ config, onBack }) {
 
         {/* STATO: PLAYING (In gioco) */}
         {game.gameStatus === GAME_STATUS.PLAYING && (
-          <div className="w-full flex flex-col items-center space-y-4">
-            {/* Timer & Punteggio Header */}
-            <div className="w-full grid grid-cols-2 gap-4 items-center bg-slate-900/60 border border-slate-800 rounded-3xl p-4">
-              <GameTimer
-                timeLeft={game.timer.timeLeft}
-                totalTime={config.timerSeconds}
+          <div className="w-full flex flex-col items-center space-y-3 sm:space-y-4">
+            {/* Timer & Punteggio Header con Bottone START/STOP al Centro */}
+            <div className="w-full grid grid-cols-3 gap-2 sm:gap-3 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-3 sm:p-4 shadow-xl">
+              {/* Sinistra: Timer */}
+              <div className="flex justify-center">
+                <GameTimer
+                  timeLeft={game.timer.timeLeft}
+                  totalTime={config.timerSeconds}
+                  isRunning={game.timer.isRunning}
+                />
+              </div>
+
+              {/* Centro: Tasto Avvia / Ferma Tempo */}
+              <TimerControlButton
                 isRunning={game.timer.isRunning}
+                onToggle={game.toggleTimer}
               />
-              <ScoreDisplay
-                score={game.score}
-                correctCount={game.correctCount}
-                errorCount={game.errorCount}
-              />
+
+              {/* Destra: Punti Squadra */}
+              <div className="flex justify-center">
+                <ScoreDisplay
+                  score={game.score}
+                  correctCount={game.correctCount}
+                  errorCount={game.errorCount}
+                />
+              </div>
             </div>
 
             {/* Parola Segreta per i suggeritori */}
