@@ -8,6 +8,7 @@ import { useGameState } from './useGameState';
  * - Esegue useGameState normalmente (ha il controllo completo del gioco).
  * - Trasmette l'intero stato di gioco via BroadcastChannel ogni volta che cambia.
  * - Ascolta i comandi inviati dallo Schermo Giocatore (GUEST):
+ *   - GUEST_READY     → risponde immediatamente con lo stato corrente (snapshot)
  *   - CMD_TOGGLE_TIMER → esegue toggleTimer
  *   - CMD_PASS        → esegue handlePass
  *
@@ -25,6 +26,22 @@ export function useHostGameState(config, roomCode) {
     handlePass: game.handlePass,
   };
 
+  // Ref allo stato corrente — aggiornato ad ogni render — per rispondere a GUEST_READY
+  const stateSnapshotRef = useRef({});
+  stateSnapshotRef.current = {
+    gameStatus: game.gameStatus,
+    score: game.score,
+    correctCount: game.correctCount,
+    errorCount: game.errorCount,
+    countdownNumber: game.countdownNumber,
+    timeLeft: game.timer.timeLeft,
+    isTimerRunning: game.timer.isRunning,
+    remainingPasses: game.passes.remainingPasses,
+    totalPasses: game.passes.totalPasses,
+    canPass: game.passes.canPass,
+    isWaitingForNextWord: game.isWaitingForNextWord,
+  };
+
   // Setup BroadcastChannel e ascolto comandi guest
   useEffect(() => {
     const channel = new BroadcastChannel(`intesa-vincente-${roomCode}`);
@@ -32,7 +49,13 @@ export function useHostGameState(config, roomCode) {
 
     channel.onmessage = (event) => {
       const { type } = event.data;
-      if (type === 'CMD_TOGGLE_TIMER') {
+      if (type === 'GUEST_READY') {
+        // Il guest si è appena connesso: invia subito lo stato corrente
+        channel.postMessage({
+          type: 'STATE_UPDATE',
+          payload: stateSnapshotRef.current,
+        });
+      } else if (type === 'CMD_TOGGLE_TIMER') {
         actionsRef.current.toggleTimer();
       } else if (type === 'CMD_PASS') {
         actionsRef.current.handlePass();
@@ -50,19 +73,7 @@ export function useHostGameState(config, roomCode) {
     if (!channelRef.current) return;
     channelRef.current.postMessage({
       type: 'STATE_UPDATE',
-      payload: {
-        gameStatus: game.gameStatus,
-        score: game.score,
-        correctCount: game.correctCount,
-        errorCount: game.errorCount,
-        countdownNumber: game.countdownNumber,
-        timeLeft: game.timer.timeLeft,
-        isTimerRunning: game.timer.isRunning,
-        remainingPasses: game.passes.remainingPasses,
-        totalPasses: game.passes.totalPasses,
-        canPass: game.passes.canPass,
-        isWaitingForNextWord: game.isWaitingForNextWord,
-      },
+      payload: stateSnapshotRef.current,
     });
   }, [
     game.gameStatus,
