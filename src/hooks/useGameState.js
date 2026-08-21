@@ -23,6 +23,7 @@ export function useGameState(config = {}) {
   const [gameStatus, setGameStatus] = useState(GAME_STATUS.IDLE);
   const [deck, setDeck] = useState(() => shuffleDeck(initialWords));
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [isWaitingForNextWord, setIsWaitingForNextWord] = useState(false);
   const [score, setScore] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [errorCount, setErrorCount] = useState(0);
@@ -73,6 +74,7 @@ export function useGameState(config = {}) {
         sounds.playStart();
         setCountdownNumber(null);
         setGameStatus(GAME_STATUS.PLAYING);
+        setIsWaitingForNextWord(false); // Nuova parola pronta all'inizio
         timer.startTimer();
         return null;
       });
@@ -85,12 +87,17 @@ export function useGameState(config = {}) {
     if (timer.isRunning) {
       timer.pauseTimer();
     } else {
+      if (isWaitingForNextWord) {
+        // Cambia la parola solo quando si riavvia il tempo
+        setCurrentWordIndex((prev) => prev + 1);
+        setIsWaitingForNextWord(false);
+      }
       timer.resumeTimer();
     }
-  }, [gameStatus, timer]);
+  }, [gameStatus, timer, isWaitingForNextWord]);
 
   const handleCorrect = useCallback(() => {
-    if (gameStatus !== GAME_STATUS.PLAYING) return;
+    if (gameStatus !== GAME_STATUS.PLAYING || isWaitingForNextWord) return;
     
     sounds.playCorrect();
     setScore((prev) => prev + POINTS_CONFIG.CORRECT);
@@ -100,13 +107,13 @@ export function useGameState(config = {}) {
       setHistory((prev) => [...prev, { word: currentWord.word, result: 'correct' }]);
     }
     
-    setCurrentWordIndex((prev) => prev + 1);
-    // Ferma automaticamente il tempo fino al prossimo riavvio!
+    // Ferma il tempo e mantieni la parola indovinata visibile
+    setIsWaitingForNextWord(true);
     timer.pauseTimer();
-  }, [gameStatus, sounds, currentWord, timer]);
+  }, [gameStatus, sounds, currentWord, timer, isWaitingForNextWord]);
 
   const handleError = useCallback(() => {
-    if (gameStatus !== GAME_STATUS.PLAYING) return;
+    if (gameStatus !== GAME_STATUS.PLAYING || isWaitingForNextWord) return;
 
     sounds.playError();
     setScore((prev) => Math.max(0, prev + POINTS_CONFIG.ERROR));
@@ -116,13 +123,13 @@ export function useGameState(config = {}) {
       setHistory((prev) => [...prev, { word: currentWord.word, result: 'error' }]);
     }
 
-    setCurrentWordIndex((prev) => prev + 1);
-    // Ferma automaticamente il tempo fino al prossimo riavvio!
+    // Ferma il tempo e mantieni la parola visibile
+    setIsWaitingForNextWord(true);
     timer.pauseTimer();
-  }, [gameStatus, sounds, currentWord, timer]);
+  }, [gameStatus, sounds, currentWord, timer, isWaitingForNextWord]);
 
   const handlePass = useCallback(() => {
-    if (gameStatus !== GAME_STATUS.PLAYING) return;
+    if (gameStatus !== GAME_STATUS.PLAYING || isWaitingForNextWord) return;
     
     if (!passes.canPass) {
       sounds.playError();
@@ -132,7 +139,6 @@ export function useGameState(config = {}) {
     const consumed = passes.consumePass();
     if (consumed) {
       sounds.playPass();
-      // Non toglie punti quando si clicca su Passo (POINTS_CONFIG.PASS = 0)
       if (POINTS_CONFIG.PASS !== 0) {
         setScore((prev) => Math.max(0, prev + POINTS_CONFIG.PASS));
       }
@@ -141,15 +147,16 @@ export function useGameState(config = {}) {
         setHistory((prev) => [...prev, { word: currentWord.word, result: 'pass' }]);
       }
 
-      setCurrentWordIndex((prev) => prev + 1);
-      // Ferma automaticamente il tempo fino al prossimo riavvio!
+      // Ferma il tempo e mantieni la parola visibile
+      setIsWaitingForNextWord(true);
       timer.pauseTimer();
     }
-  }, [gameStatus, passes, sounds, currentWord, timer]);
+  }, [gameStatus, passes, sounds, currentWord, timer, isWaitingForNextWord]);
 
   const resetGame = useCallback(() => {
     setDeck(shuffleDeck(initialWords));
     setCurrentWordIndex(0);
+    setIsWaitingForNextWord(false);
     setScore(0);
     setCorrectCount(0);
     setErrorCount(0);
@@ -164,6 +171,7 @@ export function useGameState(config = {}) {
     gameStatus,
     setGameStatus,
     currentWord,
+    isWaitingForNextWord,
     score,
     correctCount,
     errorCount,

@@ -153,8 +153,8 @@ export function StandaloneGame({ config, onBack }) {
             <div className="w-full">
               <CurrentWordCard
                 word={game.currentWord?.word}
-                category={game.currentWord?.category}
                 difficulty={game.currentWord?.difficulty}
+                isWaitingForNextWord={game.isWaitingForNextWord}
               />
             </div>
 

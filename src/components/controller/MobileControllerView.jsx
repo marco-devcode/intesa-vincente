@@ -96,10 +96,23 @@ export function MobileControllerView({ roomCode, onBack }) {
 
             {/* Istruzione per il giocatore */}
             <div className="text-center p-6 bg-slate-950/60 border border-slate-800/80 rounded-2xl w-full">
-              <span className="text-xs text-indigo-400 font-bold uppercase tracking-widest">Ascolta i suggeritori</span>
-              <p className="text-sm text-slate-300 mt-2">
-                Indovina la parola e pronunciala ad alta voce! I suggeritori registreranno i punti.
-              </p>
+              {game.isWaitingForNextWord ? (
+                <>
+                  <span className="text-xs text-amber-400 font-black uppercase tracking-widest animate-pulse">
+                    avvia il tempo per mostrare la nuova parola
+                  </span>
+                  <p className="text-xs text-slate-400 mt-2">
+                    Premi il pulsante verde al centro per rivelare il prossimo termine ed avviare il countdown.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <span className="text-xs text-indigo-400 font-bold uppercase tracking-widest">Ascolta i suggeritori</span>
+                  <p className="text-sm text-slate-300 mt-2">
+                    Indovina la parola e pronunciala ad alta voce! I suggeritori registreranno i punti.
+                  </p>
+                </>
+              )}
             </div>
 
             {/* Pulsante di Passo per velocizzare */}

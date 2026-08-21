@@ -110,6 +110,19 @@ intesa-vincente/
 
 ## 📝 4. Registro delle Sessioni (Changelog)
 
+### Sessione 6 (Tempismo Parola, Rimozione Categoria, Notifica Avvio Tempo)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. **Tempismo di Svelamento**:
+     - Modificato `useGameState.js`: Premendo `+1`, `-1` o `Passo`, la parola appena indovinata/sbagliata resta mostrata a schermo mentre il timer viene fermato.
+     - L'indice della parola viene incrementato solo all'effettivo riavvio del tempo (`toggleTimer`), quando si passa alla parola successiva.
+  2. **Rimozione della Categoria**:
+     - Rimosso qualsiasi riferimento visivo alla categoria (es. "Cibo", "Strumenti") sia nello schermo Suggeritori (`CurrentWordCard.jsx`) sia sullo schermo Giocatore/TV (`WordReveal.jsx`).
+  3. **Notifica di Avvio Tempo**:
+     - Nello spazio precedentemente occupato dalla categoria, a tempo fermo dopo una risposta, viene mostrato il testo `"avvia il tempo per mostrare la nuova parola"`.
+     - Lo stato `isWaitingForNextWord` viene ora propagato in tempo reale anche sul canale `BroadcastChannel` in `useHostGameState` e `useGuestGameState`.
+  4. **Build verificata** ✅ con successo.
+
 ### Sessione 5 (Sincronizzazione 2 Schermi con BroadcastChannel e Inversione Ruoli)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:

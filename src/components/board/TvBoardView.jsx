@@ -147,8 +147,8 @@ export function TvBoardView({ config, roomCode, onBack }) {
             <div className="w-full">
               <WordReveal
                 word={game.currentWord?.word}
-                category={game.currentWord?.category}
                 isVisible={true}
+                isWaitingForNextWord={game.isWaitingForNextWord}
               />
             </div>
 

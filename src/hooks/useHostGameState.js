@@ -61,6 +61,7 @@ export function useHostGameState(config, roomCode) {
         remainingPasses: game.passes.remainingPasses,
         totalPasses: game.passes.totalPasses,
         canPass: game.passes.canPass,
+        isWaitingForNextWord: game.isWaitingForNextWord,
       },
     });
   }, [
@@ -74,6 +75,7 @@ export function useHostGameState(config, roomCode) {
     game.passes.remainingPasses,
     game.passes.totalPasses,
     game.passes.canPass,
+    game.isWaitingForNextWord,
   ]);
 
   // Restituisce l'intero oggetto game invariato (l'host ha accesso completo)

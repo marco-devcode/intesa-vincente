@@ -15,6 +15,7 @@ const INITIAL_GUEST_STATE = {
   remainingPasses: DEFAULT_MAX_PASSES,
   totalPasses: DEFAULT_MAX_PASSES,
   canPass: true,
+  isWaitingForNextWord: false,
 };
 
 /**
@@ -77,6 +78,7 @@ export function useGuestGameState(roomCode) {
       totalPasses: state.totalPasses,
       canPass: state.canPass,
     },
+    isWaitingForNextWord: state.isWaitingForNextWord,
 
     toggleTimer,
     handlePass,

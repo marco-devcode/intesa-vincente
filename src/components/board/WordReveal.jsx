@@ -4,16 +4,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 /**
  * Visualizzazione della parola svelata (sul tabellone principale o in post-partita)
  */
-export function WordReveal({ word, category, isVisible = true }) {
+export function WordReveal({ word, isVisible = true, isWaitingForNextWord = false }) {
   if (!word) return null;
 
   return (
     <div className="w-full flex flex-col items-center justify-center my-4">
-      {category && (
-        <span className="text-xs uppercase tracking-widest font-bold text-sky-400 bg-sky-950/60 border border-sky-500/30 px-3 py-1 rounded-full mb-2">
-          {category}
-        </span>
-      )}
+      {/* Notifica di avvio tempo */}
+      <div className="min-h-[32px] mb-2 flex items-center justify-center">
+        {isWaitingForNextWord && (
+          <span className="text-xs uppercase tracking-widest font-black text-amber-400 bg-amber-950/80 border border-amber-500/40 px-4 py-1.5 rounded-full animate-pulse">
+            avvia il tempo per mostrare la nuova parola
+          </span>
+        )}
+      </div>
 
       <div className="w-full max-w-xl bg-gradient-to-r from-blue-950/80 via-slate-900/90 to-blue-950/80 border-2 border-blue-400/40 rounded-3xl p-6 sm:p-8 text-center shadow-[0_0_40px_rgba(59,130,246,0.3)]">
         <AnimatePresence mode="wait">
