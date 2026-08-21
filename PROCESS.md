@@ -11,7 +11,7 @@
 Tutto il codice del progetto deve rispettare rigorosamente le seguenti linee guida:
 
 1. **Disco & Ambiente**:
-   - Qualsiasi nuovo software, runtime, dipendenza o cache deve essere allocato sul disco `D:` (es. `D:\nodejs`, `d:\HUAWEI\Documents\IntesaVincente`).
+   - Qualsiasi nuovo software, runtime, dipendenza o cache deve essere allocato sul disco `D:` (es. `D:\nodejs`, `D:\Git`, `D:\gh`, `d:\HUAWEI\Documents\IntesaVincente`).
 2. **Modularità & Principio DRY (Don't Repeat Yourself)**:
    - Non duplicare mai logica di calcolo, gestione timer, audio o formattazione.
    - Logica ripetuta ➡️ estrarre in **funzioni pure** (`src/utils/`) o in **custom hook** (`src/hooks/`).
@@ -38,7 +38,7 @@ Tutto il codice del progetto deve rispettare rigorosamente le seguenti linee gui
 - **Timer & Regole**:
   - Countdown standard 60s, +1 punto per risposte esatte, -1 per errori e passi.
 - **Audio Engine Studio TV (`soundSynthesizer.js`)**:
-  - Sintesi audio istantanea a latenza zero tramite Web Audio API (jingle 3-2-1, dong risposta esatta, buzzer errore, swoosh passo, ticchettio e sirena tempo scaduto).
+  - Sintesi audio nativa tramite Web Audio API (jingle 3-2-1, dong risposta esatta, buzzer errore, swoosh passo, ticchettio e sirena tempo scaduto).
 
 ---
 
@@ -89,9 +89,11 @@ intesa-vincente/
 │   │   └── index.css                  # Tailwind CSS, glow neon e glassmorphism
 │   ├── App.jsx                        # Router e state container principale
 │   └── main.jsx                       # Entrypoint React
+├── .gitignore                         # Esclusione node_modules, dist, .vercel
 ├── index.html
 ├── progetto.md
 ├── PROCESS.md
+├── README.md
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
@@ -102,29 +104,31 @@ intesa-vincente/
 
 ## 📝 4. Registro delle Sessioni (Changelog)
 
+### Sessione 3 (Autenticazione GitHub CLI & Push su Remote Main)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. Configurato **GitHub CLI (`gh.exe`)** su disco `D:\gh`.
+  2. Autenticato con successo l'account utente GitHub `marco-devcode` via GitHub Device Flow.
+  3. Effettuato il **push completo** del branch `main` sul repository remoto [`https://github.com/marco-devcode/intesa-vincente`](https://github.com/marco-devcode/intesa-vincente).
+  4. Repository online e pronto per il deploy su Vercel.
+
+### Sessione 2 (Preparazione Repository Git & Deploy Vercel / GitHub)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. Configurato **Git per Windows (v2.47.1)** su disco `D:\Git` e aggiunto permanentemente al PATH di sistema.
+  2. Creato `.gitignore` e `README.md`.
+  3. Inizializzato repository locale (`git init`) e completato il primo commit.
+
 ### Sessione 1 (Inizializzazione Progetto, Architettura & Implementazione Completa)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:
-  1. **Configurazione Ambiente su Disco `D:`**:
-     - Scaricato e configurato Node.js v22.14.0 LTS portatile su `D:\nodejs`.
-     - Impostata la cache di npm su `D:\npm-cache` per non occupare spazio sul disco `C:`.
-     - Aggiunto `D:\nodejs` al PATH di sistema.
-  2. **Creazione Progetto & Setup Dipendenze**:
-     - Inizializzato progetto Vite + React + Tailwind CSS.
-     - Installate librerie: `lucide-react`, `framer-motion`, `qrcode.react`, `canvas-confetti`, `clsx`, `tailwind-merge`.
-  3. **Implementazione Specifiche & Regole**:
-     - Creata la schermata iniziale `ModeSelector` per scegliere tra **1 Schermo (Standalone)** e **2 Schermi (QR Code)**.
-     - Creata la logica per il numero di **Passi (default 2)** con `usePassesManager.js`, `PassIndicator.jsx` e disabilitazione automatica a 0 passi in `ActionPad.jsx`.
-     - Implementato `soundSynthesizer.js` per riprodurre suoni televisivi realistici (chime corretto, buzzer grave, scivolamento passo, countdown tick, sirena fine round) a zero latenza.
-     - Creata la vista completa **1 Schermo (`StandaloneGame.jsx`)** con timer circolare, parola segreta con privacy toggle, pulsantiera touch e schermata finale con statistiche e coriandoli.
-     - Creata la vista **2 Schermi (`TvBoardView.jsx`, `QrCodeDisplay.jsx`, `MobileControllerView.jsx`)** con generazione automatica del QR Code e routing automatico via URL query parameter.
-     - Creata la modale impostazioni per personalizzare timer (30s-90s) e passi (0-5 o infiniti).
-     - Verificato il build e l'assenza di errori di compilazione.
+  1. Setup ambiente Node.js v22 LTS e npm su `D:\nodejs` e cache su `D:\npm-cache`.
+  2. Inizializzato progetto Vite + React + Tailwind CSS con icone, suoni e animazioni.
+  3. Implementate le modalità 1 Schermo (Standalone) e 2 Schermi (QR Code), gestione dei 2 passi e sintetizzatore audio studio TV.
 
 ---
 
 ## 🎯 5. Prossimi Passi (Next Steps)
 
-1. [ ] Avviare il server di sviluppo locale (`npm run dev`) per testare in anteprima l'interfaccia nel browser.
-2. [ ] Aggiungere eventuali categorie tematiche supplementari o editor mazzi personalizzati.
-3. [ ] Aggiungere supporto opzionale a WebSockets per sincronizzazione remota via internet su reti diverse.
+1. [x] Codice sincronizzato e pubblicato su GitHub ([`marco-devcode/intesa-vincente`](https://github.com/marco-devcode/intesa-vincente)).
+2. [ ] Effettuare il deploy live su Vercel con 1 click importando il repository da [`vercel.com/new`](https://vercel.com/new).
