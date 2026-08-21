@@ -69,8 +69,9 @@ export function MobileControllerView({ roomCode, onBack }) {
         {game.gameStatus === GAME_STATUS.PLAYING && (
           <div className="w-full flex flex-col items-center space-y-6">
             {/* Pannello Timer e Score */}
-            <div className="w-full grid grid-cols-3 gap-2 items-center bg-slate-900/80 border border-slate-800 rounded-2xl p-4 shadow-lg">
-              <div className="flex justify-center">
+            {/* Timer mini + Tasto Stop/Avvia + Punteggio mini */}
+            <div className="w-full grid grid-cols-[28%_44%_28%] gap-1 xs:gap-2 items-center bg-slate-900/80 border border-slate-800 rounded-2xl p-2.5 xs:p-3 shadow-lg select-none">
+              <div className="flex justify-center min-w-0 overflow-hidden">
                 <GameTimer
                   timeLeft={game.timer.timeLeft}
                   totalTime={60}
@@ -79,12 +80,15 @@ export function MobileControllerView({ roomCode, onBack }) {
                 />
               </div>
 
-              <TimerControlButton
-                isRunning={game.timer.isRunning}
-                onToggle={game.toggleTimer}
-              />
+              <div className="min-w-0">
+                <TimerControlButton
+                  isRunning={game.timer.isRunning}
+                  onToggle={game.toggleTimer}
+                  className="w-full py-3 px-1 sm:px-2 rounded-xl"
+                />
+              </div>
 
-              <div className="flex justify-center">
+              <div className="flex justify-center min-w-0 overflow-hidden">
                 <ScoreDisplay
                   score={game.score}
                   correctCount={game.correctCount}

@@ -123,9 +123,9 @@ export function StandaloneGame({ config, onBack }) {
         {game.gameStatus === GAME_STATUS.PLAYING && (
           <div className="w-full flex flex-col items-center space-y-3 sm:space-y-4">
             {/* Timer & Punteggio Header con Bottone START/STOP al Centro */}
-            <div className="w-full grid grid-cols-3 gap-2 sm:gap-3 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-3 sm:p-4 shadow-xl">
+            <div className="w-full grid grid-cols-[28%_44%_28%] gap-1 xs:gap-2 sm:gap-3 items-center bg-slate-900/80 border border-slate-800 rounded-3xl p-2.5 xs:p-3 sm:p-4 shadow-xl select-none">
               {/* Sinistra: Timer */}
-              <div className="flex justify-center">
+              <div className="flex justify-center min-w-0 overflow-hidden">
                 <GameTimer
                   timeLeft={game.timer.timeLeft}
                   totalTime={config.timerSeconds}
@@ -134,13 +134,16 @@ export function StandaloneGame({ config, onBack }) {
               </div>
 
               {/* Centro: Tasto Avvia / Ferma Tempo */}
-              <TimerControlButton
-                isRunning={game.timer.isRunning}
-                onToggle={game.toggleTimer}
-              />
+              <div className="min-w-0">
+                <TimerControlButton
+                  isRunning={game.timer.isRunning}
+                  onToggle={game.toggleTimer}
+                  className="w-full py-3.5 px-1 sm:px-3 sm:py-5 rounded-2xl"
+                />
+              </div>
 
               {/* Destra: Punti Squadra */}
-              <div className="flex justify-center">
+              <div className="flex justify-center min-w-0 overflow-hidden">
                 <ScoreDisplay
                   score={game.score}
                   correctCount={game.correctCount}

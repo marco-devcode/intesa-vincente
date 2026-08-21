@@ -110,6 +110,18 @@ intesa-vincente/
 
 ## 📝 4. Registro delle Sessioni (Changelog)
 
+### Sessione 7 (Layout Percentuale Responsivo, Ridimensionamento Fluido Timer e Score)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. **SVG relativo in GameTimer.jsx**:
+     - Sostituito il raggio e i parametri assoluti dell'SVG con un `viewBox="0 0 100 100"` relativo e un raggio fisso di `40`. L'SVG ora scala fluidamente occupando il 100% dello spazio del contenitore padre senza mai sbordare.
+     - Aggiunto ridimensionamento responsive dei testi dei secondi all'interno del cerchio.
+  2. **Griglia in Percentuale**:
+     - Aggiornate le griglie di intestazione durante il gameplay in `StandaloneGame.jsx`, `TvBoardView.jsx` e `MobileControllerView.jsx` utilizzando una proporzione fissa `grid-cols-[28%_44%_28%]`.
+     - Aggiunto `min-w-0` e `overflow-hidden` sui contenitori laterali per evitare il grid blowout.
+     - Impostata larghezza flessibile `w-full` e rimosso min-width rigido per `TimerControlButton` per adattarsi perfettamente anche a schermi da 320px (iPhone SE).
+  3. **Build verificata** ✅ con successo.
+
 ### Sessione 6 (Tempismo Parola, Rimozione Categoria, Notifica Avvio Tempo)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:
