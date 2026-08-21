@@ -9,8 +9,8 @@ import { Button } from '../common/Button';
 export function QrCodeDisplay({ roomCode = 'CAT8', onStartMatch, onBack }) {
   const [copied, setCopied] = React.useState(false);
   
-  // URL generato per il controller mobile
-  const roomUrl = `${window.location.origin}${window.location.pathname}?room=${roomCode}&role=suggester`;
+  // URL generato per il controller mobile (Giocatore che indovina)
+  const roomUrl = `${window.location.origin}${window.location.pathname}?room=${roomCode}&role=player`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(roomUrl);
@@ -30,7 +30,7 @@ export function QrCodeDisplay({ roomCode = 'CAT8', onStartMatch, onBack }) {
       </h2>
       
       <p className="text-slate-300 text-sm max-w-md mx-auto mb-6">
-        I due suggeritori devono scansionare questo QR Code per visualizzare le parole segrete sul proprio telefono.
+        Il <strong>Giocatore</strong> (chi deve indovinare) deve scansionare questo QR Code per controllare il tempo e passare dallo smartphone.
       </p>
 
       {/* QR Code Container */}

@@ -110,6 +110,21 @@ intesa-vincente/
 
 ## 📝 4. Registro delle Sessioni (Changelog)
 
+### Sessione 5 (Sincronizzazione 2 Schermi con BroadcastChannel e Inversione Ruoli)
+- **Data**: 2026-08-21
+- **Cosa è stato fatto**:
+  1. **Inversione dei Ruoli**:
+     - Lo schermo principale (TV/Browser host) diventa lo **Schermo Suggeritori** (ha il controllo completo, vede la parola, ha i tasti +1, -1, Passo).
+     - Lo schermo controller (scansionato da QR) diventa lo **Schermo Giocatore** (non vede la parola, vede solo timer, punteggio, tasto Avvia/Ferma tempo e il tasto Passo, senza opzioni +1/-1).
+  2. **Tecnologia di Sincronizzazione**:
+     - Creato hook `useHostGameState.js` per inviare lo stato di gioco via `BroadcastChannel` in tempo reale e ricevere comandi dal guest.
+     - Creato hook `useGuestGameState.js` per ricevere lo stato ed emettere i comandi (`CMD_TOGGLE_TIMER`, `CMD_PASS`).
+  3. **Aggiornamento componenti**:
+     - `TvBoardView.jsx` (Schermo Suggeritori): Riscritto per mostrare lo stato host con opzioni complete di gioco standalone.
+     - `MobileControllerView.jsx` (Schermo Giocatore): Mostra solo timer, punteggio, pulsante centrale e Passo.
+     - `QrCodeDisplay.jsx` & `App.jsx`: Aggiornato il link del QR code a `role=player` e reindirizzato lo smartphone alla schermata di gioco corretta.
+  4. **Build verificata** ✅ con successo.
+
 ### Sessione 4 (Timer Stop Automatico, Pulsante Centrale, No Zoom Mobile)
 - **Data**: 2026-08-21
 - **Cosa è stato fatto**:

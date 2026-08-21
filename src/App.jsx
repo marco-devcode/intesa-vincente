@@ -28,7 +28,7 @@ export function App() {
 
     if (roomParam) {
       setRoomCode(roomParam.toUpperCase());
-      if (roleParam === 'suggester') {
+      if (roleParam === 'player') {
         setCurrentView('mobile_controller');
       }
     }

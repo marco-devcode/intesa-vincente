@@ -29,3 +29,9 @@ export const PASS_MODES = {
   DISALLOW_ON_ZERO: 'disallow', // Disabilita il tasto quando i passi sono 0
   EXTRA_PENALTY: 'penalty',     // Permette passi extra ma con penalità (-2 punti)
 };
+
+export const SCREEN_ROLES = {
+  HOST: 'host',   // Schermo Suggeritori — controlla il gioco, vede la parola
+  GUEST: 'guest', // Schermo Giocatore  — vede timer/punti, manda comandi
+};
+
